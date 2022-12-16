@@ -1,0 +1,48 @@
+package ch09;
+
+import java.sql.Date;
+//엔티티 클래스 만들기 - 자바리소스 - 메인-  ch9에 만들기
+//Entity Class 는 데이터베이스와 대응된다. 컬럼명 = 속성
+public class Student {
+//db와 똑같이 맞추기 
+	private int id;
+	private String username;
+	private String univ;
+	private Date birth; //java.sql을 import 해야 한다. (데이터베이스의 date 타입과 일치해야 한다.)
+	private String email;
+	
+	
+	//Getter, Setter
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getUniv() {
+		return univ;
+	}
+	public void setUniv(String univ) {
+		this.univ = univ;
+	}
+	public Date getBirth() {
+		return birth;
+	}
+	public void setBirth(Date birth) {
+		this.birth = birth;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	
+}
